@@ -5,15 +5,15 @@
     <title>self intro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.inview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="js/scroll.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <!-- navbar -->
+    <header class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <span class="navbar-brand">Sudo Takahito</span>
       <button class="navbar-toggler" type="button"
           data-toggle="collapse"
@@ -24,83 +24,99 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navmenu">
-        <div class="navbar-nav">
-          <a href="#menu1" class="nav-item nav-link">About Me</a>
-          <a href="#menu2" class="nav-item nav-link">Hobbies</a>
-          <a href="#menu3" class="nav-item nav-link">Link</a>
-        </div>
+        <ul class="navbar-nav mr-auto">
+          <li href="#menu1" class="nav-item nav-link">About Me</li>
+          <li href="#menu2" class="nav-item nav-link">Hobbies</li>
+          <li href="#character" class="nav-item nav-link">Character</li>
+          <li href="#access" class="nav-item nav-link">Access</li>
+          <li href="#menu3" class="nav-item nav-link">Link</li>
+        </ul>
       </div>
-    </nav>
+    </header>
 
-    <!-- contents -->
-    <div class="container-fluid">
-      <div id="menu1">
+    <!-- container -->
+    <main class="container-fluid">
+      <section class="fadein" id="menu1">
         <h1>About Me</h1>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy
-      </div>
-      <div id="menu2">
+        <p></p>
+      </section>
+      <section class="fadein" id="menu2">
         <h1>Hobbies</h1>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy
-      </div>
-      <div id="menu3">
+        <p>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy<br>
+          dummy
+        </p>    
+      </section>
+
+      <section class="fadein" id="character">
+        <h1>メインキャラクター</h1>
+        <div class="character-detail">
+          <img id="mainchara" src="img/costume1.jpg" alt="私です">
+          <div class="costume">
+            <ul class="costume-list">
+              <li class="costume-item nav-link" id="costume1">ケルベロス</li>
+              <li class="costume-item nav-link" id="costume2">キンメダイ</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="fadein" id="access">
+        <h1>Access</h1>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.4023068045703!2d139.54341050558227!3d35.65699622710522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f0141c587615%3A0xe510b22e7670f20b!2z6Zu75rCX6YCa5L-h5aSn5a2m!5e0!3m2!1sja!2sjp!4v1587353233710!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </section>
+      
+      <section class="fadein" id="menu3">
         <h1>Link</h1>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy<br>
-        dummy
-      </div>
-    </div>
+        <div>
+          <ul>
+            <li>
+              <a href="mailto:s1710730@edu.cc.uec.ac.jp">send mail</a>
+            </li>
+            <li>
+              <a href="http://www.kisarazu.ac.jp/gakka/information/" target="_blank">ネタの宝庫</a>
+            </li>
+            <li>
+              <a href="https://www.dmm.co.jp/search/=/searchstr=%E7%B4%97%E5%80%89%E3%81%BE%E3%81%AA" target="_blank">偉大なる先輩</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
