@@ -1,0 +1,75 @@
+header {
+  margin: 0; padding: 0;
+  width: 100%; height: 5vh;
+}
+
+section {
+  position: relative;
+  margin-bottom: 5vh; padding: 0;
+  top: 0; left: 0;
+  width: 100%; height: 95vh;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.character-detail {
+  display: flex;
+}
+
+img#mainchara {
+  height: 540px;
+  width: 540px;
+}
+
+.fadein>* {
+  position: relative;
+  margin: 0; padding: 0;
+  top: 0; left: 0;
+  opacity: 0;
+  font-family: Verdana, sans-serif;
+}
+
+/************************************************
+ * animation
+ ************************************************/
+.fadein h1.animation {
+  animation: fadein-left 0.5s ease 0.2s forwards;
+}
+.fadein p.animation {
+  animation: fadein-bottom 0.5s ease 0.7s forwards;
+}
+.fadein div.animation {
+  animation: fadein 0.5s ease 0.7s forwards;
+}
+
+/************************************************
+ * keyframes
+ ************************************************/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadein-left {
+  from { 
+    transform: translateX(-10%);
+    opacity: 0; 
+  }
+  to   { 
+    transform: translateX(0%);
+    opacity: 1; 
+  }
+}
+
+@keyframes fadein-bottom {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to   {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
