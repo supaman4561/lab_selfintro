@@ -5,7 +5,7 @@
     <title>self intro</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.inview.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -23,8 +23,8 @@
           aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navmenu">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse nabvar-dark bg-dark" id="navmenu">
+        <ul class="navbar-nav">
           <li href="#menu1" class="nav-item nav-link">About Me</li>
           <li href="#menu2" class="nav-item nav-link">Hobbies</li>
           <li href="#character" class="nav-item nav-link">Character</li>
@@ -37,11 +37,15 @@
     <!-- container -->
     <main class="container-fluid">
       <section class="fadein" id="menu1">
-        <h1>About Me</h1>
-        <p></p>
+        <div class="section-title">About Me</div>
+        <div class="my-name">
+          <img class="my-icon" src="img/icon.jpg" alt="icon">
+          <p class="name">須藤敬仁</p>
+          <p class="at">@Kashihara Lab</p>
+        </div>
       </section>
       <section class="fadein" id="menu2">
-        <h1>Hobbies</h1>
+        <div class="section-title">Hobbies</div>
         <p>
           dummy<br>
           dummy<br>
@@ -81,7 +85,7 @@
       </section>
 
       <section class="fadein" id="character">
-        <h1>メインキャラクター</h1>
+        <div class="section-title">メインキャラクター</div>
         <div class="character-detail">
           <img id="mainchara" src="img/costume1.jpg" alt="私です">
           <div class="costume">
@@ -94,14 +98,14 @@
       </section>
 
       <section class="fadein" id="access">
-        <h1>Access</h1>
+        <div class="section-title">Access</div>
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.4023068045703!2d139.54341050558227!3d35.65699622710522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f0141c587615%3A0xe510b22e7670f20b!2z6Zu75rCX6YCa5L-h5aSn5a2m!5e0!3m2!1sja!2sjp!4v1587353233710!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
       
       <section class="fadein" id="menu3">
-        <h1>Link</h1>
+        <div class="section-title">Link</div>
         <div>
           <ul>
             <li>
