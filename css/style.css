@@ -57,11 +57,6 @@ section {
   border-radius: 50%;
 }
 
-img#mainchara {
-  height: 540px;
-  width: 540px;
-}
-
 .fadein>* {
   position: relative;
   opacity: 0;
@@ -73,8 +68,19 @@ img#mainchara {
   font-size: 30px;
 }
 
-li {
-  list-style-type: none;
+.logos {
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  width: 50vh;
+}
+
+.logo-item {
+  margin: auto;
+}
+
+#link {
+  height: 25vh;
 }
 
 /************************************************
