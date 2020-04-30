@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 3%; padding: 0;
+  margin-bottom: 30px; padding: 0;
   width: 100%; height: 5vh;
 }
 
@@ -31,12 +31,11 @@ section {
 .section-title {
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 50%; height: 50px;
+  width: 400px; height: 50px;
   font-size: 30px;
   font-family: Verdana, sans-serif;
   color: #90bfda;
 }
-
 
 .nav-link {
   cursor: pointer;
@@ -53,18 +52,9 @@ section {
 
 .my-icon {
   position: relative;
-  width: 90px; height: 90px;
+  width: 120px; height: 120px;
   margin: 0 auto;
   border-radius: 50%;
-}
-
-p.name {
-  font-size: 24pt;
-}
-
-img#mainchara {
-  height: 540px;
-  width: 540px;
 }
 
 .fadein>* {
@@ -72,6 +62,25 @@ img#mainchara {
   opacity: 0;
   font-family: Verdana, sans-serif;
   text-align: center;
+}
+
+.name {
+  font-size: 30px;
+}
+
+.logos {
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  width: 50vh;
+}
+
+.logo-item {
+  margin: auto;
+}
+
+#link {
+  height: 25vh;
 }
 
 /************************************************
@@ -85,6 +94,9 @@ img#mainchara {
 }
 .fadein div.animation {
   animation: fadein 0.5s ease 0.7s forwards;
+}
+.my-icon {
+  animation: rotate 0.5s ease 1.0s forwards;
 }
 
 /************************************************
@@ -103,6 +115,15 @@ img#mainchara {
   to   { 
     transform: translateX(0%);
     opacity: 1; 
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-180deg);
+  }
+  to   {
+    transform: rotate(0deg);
   }
 }
 
