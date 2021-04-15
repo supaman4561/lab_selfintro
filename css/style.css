@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   margin-bottom: 30px; padding: 0;
   width: 100%; height: 5vh;
@@ -6,7 +11,7 @@ header {
 section {
   position: relative;
   margin-bottom: 5%;
-  width: 100%; height: 95vh;
+  width: 100%;
 }
 
 .section-title:before,
@@ -15,17 +20,17 @@ section {
   display: block;
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+  width: 0%; height: 100%;
 }
 
 .section-title:before {
-  background-color: rgb(29, 79, 145);
-  opacity: .5;
-  transform: translate(8px, -8px);
+  opacity: 1;
+  border-bottom: solid 3px rgb(28, 218, 170);
 }
 
 .section-title:after {
-  border: solid 3px rgb(35, 31, 87);
+  opacity: 1;
+  border-bottom: solid 3px rgb(231, 100, 13);
 }
 
 .section-title {
@@ -54,12 +59,22 @@ section {
   position: relative;
   width: 120px; height: 120px;
   margin: 0 auto;
-  border-radius: 50%;
+  transform: rotate(-180deg);
 }
+
+.my-icon:after {
+  content: ''; display: block;
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.my-icon:after { background-image: url(../img/icon.jpg); }
 
 .fadein>* {
   position: relative;
-  opacity: 0;
+  opacity: .0;
   font-family: Verdana, sans-serif;
   text-align: center;
 }
@@ -87,16 +102,22 @@ section {
  * animation
  ************************************************/
 .fadein .section-title.animation {
-  animation: fadein-left 0.5s ease 0.2s forwards;
+  animation: fadein-left 0.5s ease 0.5s forwards;
 }
-.fadein p.animation {
-  animation: fadein-bottom 0.5s ease 0.7s forwards;
+.fadein .section-title.animation::before {
+  animation: widthin-left 1.0s ease 0.5s forwards;
+}
+.fadein .section-title.animation::after {
+  animation: widthin-left 1.0s ease 1.0s forwards;
+}
+.fadein .btm-in-item.animation {
+  animation: fadein-bottom 0.5s ease 2.5s forwards;
 }
 .fadein div.animation {
-  animation: fadein 0.5s ease 0.7s forwards;
+  animation: fadein 0.5s ease 2.0s forwards;
 }
 .my-icon {
-  animation: rotate 0.5s ease 1.0s forwards;
+  animation: rotate 2.0s ease 2.0s forwards;
 }
 
 /************************************************
@@ -115,6 +136,15 @@ section {
   to   { 
     transform: translateX(0%);
     opacity: 1; 
+  }
+}
+
+@keyframes widthin-left {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
 
